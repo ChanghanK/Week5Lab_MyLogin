@@ -58,12 +58,13 @@ public class LoginServlet extends HttpServlet {
             user = account.login(username, password);
         }
         
-        if (user != null){
+         if (user != null){
             user.setUsername(username);
             user.setPassword(password);
             session.setAttribute("user", user);
             response.sendRedirect("home");
-        } else{
+        } 
+        else{
             request.setAttribute("username", username);
             request.setAttribute("password", password);
             request.setAttribute("login", "Invalid");

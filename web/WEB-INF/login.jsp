@@ -19,7 +19,7 @@
             <input type="submit" value="Log in">
         </form>
         <div>
-            ${log}
+            ${login}
         </div>
     </body>
 </html>
